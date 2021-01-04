@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "S9ryKNboypbF3EJQCGxL+ZWy7L88HgJhDc0y6b2XHP6MezRK3WWhtB7bz6yS6OYiSeeuiSHJaWv/GQAkI/YnKA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Iulia\\source\\repos\\VoteAndGo\\VoteAndGo\\VoteAndGo.iOS\\VoteAndGo.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Iulia\\.nuget\\packages\\plugin.permissions\\6.0.1\\plugin.permissions.6.0.1.nupkg.sha512",
+    "C:\\Users\\Iulia\\.nuget\\packages\\xam.plugin.media\\5.0.1\\xam.plugin.media.5.0.1.nupkg.sha512",
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.8.0.1451\\xamarin.forms.4.8.0.1451.nupkg.sha512"
+  ],
+  "logs": []
+}

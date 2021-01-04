@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VoteAndGo.Views.AboutPage"
+             xmlns:vm="clr-namespace:VoteAndGo.ViewModels"
+             Title="{Binding Title}">
+    
+    <ContentPage.BindingContext>
+        <vm:AboutViewModel />
+    </ContentPage.BindingContext>
+    
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Accent">Pink</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        
+        <Image Source="app_logo.png" BackgroundColor="White" Grid.Row="0" />
+                
+        <ScrollView Grid.Row="1">
+            <StackLayout Orientation="Vertical" Padding="30,24,30,24" Spacing="10">
+                <Label Text="Welcome!" FontSize="Title"/>
+                <Label Text="E-voting: not comparable to any other ICT application" FontSize="Title"/>
+                <Label Text="Try the fast and safe way to register for voting!" FontSize="Subtitle" Padding="0,0,0,0"/>
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+
+</ContentPage>
