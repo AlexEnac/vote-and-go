@@ -3,10 +3,14 @@ public class MonoPackageManager_Resources {
 	public static String[] Assemblies = new String[]{
 		/* We need to ensure that "VoteAndGo.Android.dll" comes first in this list. */
 		"VoteAndGo.Android.dll",
+		"ExifLib.dll",
 		"FormsViewGroup.dll",
 		"Plugin.CurrentActivity.dll",
 		"Plugin.Media.dll",
 		"Plugin.Permissions.dll",
+		"Tesseract.Binding.Droid.dll",
+		"Tesseract.dll",
+		"Tesseract.Droid.dll",
 		"VoteAndGo.dll",
 		"Xamarin.Android.Arch.Core.Common.dll",
 		"Xamarin.Android.Arch.Core.Runtime.dll",
@@ -50,6 +54,14 @@ public class MonoPackageManager_Resources {
 		"Xamarin.Forms.Platform.Android.dll",
 		"Xamarin.Forms.Platform.dll",
 		"Xamarin.Forms.Xaml.dll",
+		"XLabs.Core.dll",
+		"XLabs.Forms.dll",
+		"XLabs.Forms.Droid.dll",
+		"XLabs.Ioc.dll",
+		"XLabs.Ioc.TinyIOC.Droid.dll",
+		"XLabs.Platform.dll",
+		"XLabs.Platform.Droid.dll",
+		"XLabs.Serialization.dll",
 	};
 	public static String[] Dependencies = new String[]{
 	};

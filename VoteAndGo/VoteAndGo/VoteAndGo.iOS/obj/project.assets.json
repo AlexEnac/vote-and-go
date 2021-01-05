@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     "Xamarin.iOS,Version=v1.0": {
+      "ExifLib.PCL/1.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+sl50+win+WindowsPhoneApp81+wp80+Xamarin.iOS10+MonoAndroid10+MonoTouch10/ExifLib.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+sl50+win+WindowsPhoneApp81+wp80+Xamarin.iOS10+MonoAndroid10+MonoTouch10/ExifLib.dll": {}
+        }
+      },
       "Plugin.Permissions/6.0.1": {
         "type": "package",
         "dependencies": {
@@ -166,14 +175,102 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Tesseract/0.3.4": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Tesseract.Binding.iOS.dll": {},
+          "lib/Xamarin.iOS10/Tesseract.dll": {},
+          "lib/Xamarin.iOS10/Tesseract.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Tesseract.Binding.iOS.dll": {},
+          "lib/Xamarin.iOS10/Tesseract.dll": {},
+          "lib/Xamarin.iOS10/Tesseract.iOS.dll": {}
+        }
+      },
+      "XLabs.Core/2.0.5782": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/XLabs.Core.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/XLabs.Core.dll": {}
+        }
+      },
+      "XLabs.Forms/2.0.5782": {
+        "type": "package",
+        "dependencies": {
+          "XLabs.Core": "[2.0.5782]",
+          "XLabs.IoC": "[2.0.5782]",
+          "XLabs.Platform": "[2.0.5782]",
+          "XLabs.Serialization": "[2.0.5782]",
+          "Xamarin.Forms": "1.5.1.6471"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/XLabs.Forms.dll": {},
+          "lib/Xamarin.iOS10/XLabs.Forms.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/XLabs.Forms.dll": {},
+          "lib/Xamarin.iOS10/XLabs.Forms.iOS.dll": {}
+        }
+      },
+      "XLabs.IoC/2.0.5782": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1/XLabs.Ioc.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1/XLabs.Ioc.dll": {}
+        }
+      },
+      "XLabs.IoC.TinyIoC/2.0.5782": {
+        "type": "package",
+        "dependencies": {
+          "XLabs.IoC": "[2.0.5782]"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/XLabs.Ioc.TinyIOC.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/XLabs.Ioc.TinyIOC.iOS.dll": {}
+        }
+      },
+      "XLabs.Platform/2.0.5782": {
+        "type": "package",
+        "dependencies": {
+          "ExifLib.PCL": "1.0.1",
+          "XLabs.Core": "[2.0.5782]"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/XLabs.Platform.dll": {},
+          "lib/Xamarin.iOS10/XLabs.Platform.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/XLabs.Platform.dll": {},
+          "lib/Xamarin.iOS10/XLabs.Platform.iOS.dll": {}
+        }
+      },
+      "XLabs.Serialization/2.0.5782": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/XLabs.Serialization.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/XLabs.Serialization.dll": {}
+        }
+      },
       "VoteAndGo/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Plugin.Permissions": "6.0.1",
+          "XLabs.Forms": "2.0.5782",
+          "XLabs.IoC.TinyIoC": "2.0.5782",
           "Xam.Plugin.Media": "5.0.1",
           "Xamarin.Essentials": "1.5.3.2",
-          "Xamarin.Forms": "4.8.0.1451"
+          "Xamarin.Forms": "4.8.0.1451",
+          "Xamarin.Tesseract": "0.3.4"
         },
         "compile": {
           "bin/placeholder/VoteAndGo.dll": {}
@@ -184,6 +281,15 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win": {
+      "ExifLib.PCL/1.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+sl50+win+WindowsPhoneApp81+wp80+Xamarin.iOS10+MonoAndroid10+MonoTouch10/ExifLib.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+sl50+win+WindowsPhoneApp81+wp80+Xamarin.iOS10+MonoAndroid10+MonoTouch10/ExifLib.dll": {}
+        }
+      },
       "Plugin.Permissions/6.0.1": {
         "type": "package",
         "dependencies": {
@@ -348,14 +454,102 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Tesseract/0.3.4": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Tesseract.Binding.iOS.dll": {},
+          "lib/Xamarin.iOS10/Tesseract.dll": {},
+          "lib/Xamarin.iOS10/Tesseract.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Tesseract.Binding.iOS.dll": {},
+          "lib/Xamarin.iOS10/Tesseract.dll": {},
+          "lib/Xamarin.iOS10/Tesseract.iOS.dll": {}
+        }
+      },
+      "XLabs.Core/2.0.5782": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/XLabs.Core.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/XLabs.Core.dll": {}
+        }
+      },
+      "XLabs.Forms/2.0.5782": {
+        "type": "package",
+        "dependencies": {
+          "XLabs.Core": "[2.0.5782]",
+          "XLabs.IoC": "[2.0.5782]",
+          "XLabs.Platform": "[2.0.5782]",
+          "XLabs.Serialization": "[2.0.5782]",
+          "Xamarin.Forms": "1.5.1.6471"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/XLabs.Forms.dll": {},
+          "lib/Xamarin.iOS10/XLabs.Forms.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/XLabs.Forms.dll": {},
+          "lib/Xamarin.iOS10/XLabs.Forms.iOS.dll": {}
+        }
+      },
+      "XLabs.IoC/2.0.5782": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1/XLabs.Ioc.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1/XLabs.Ioc.dll": {}
+        }
+      },
+      "XLabs.IoC.TinyIoC/2.0.5782": {
+        "type": "package",
+        "dependencies": {
+          "XLabs.IoC": "[2.0.5782]"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/XLabs.Ioc.TinyIOC.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/XLabs.Ioc.TinyIOC.iOS.dll": {}
+        }
+      },
+      "XLabs.Platform/2.0.5782": {
+        "type": "package",
+        "dependencies": {
+          "ExifLib.PCL": "1.0.1",
+          "XLabs.Core": "[2.0.5782]"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/XLabs.Platform.dll": {},
+          "lib/Xamarin.iOS10/XLabs.Platform.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/XLabs.Platform.dll": {},
+          "lib/Xamarin.iOS10/XLabs.Platform.iOS.dll": {}
+        }
+      },
+      "XLabs.Serialization/2.0.5782": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/XLabs.Serialization.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/XLabs.Serialization.dll": {}
+        }
+      },
       "VoteAndGo/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Plugin.Permissions": "6.0.1",
+          "XLabs.Forms": "2.0.5782",
+          "XLabs.IoC.TinyIoC": "2.0.5782",
           "Xam.Plugin.Media": "5.0.1",
           "Xamarin.Essentials": "1.5.3.2",
-          "Xamarin.Forms": "4.8.0.1451"
+          "Xamarin.Forms": "4.8.0.1451",
+          "Xamarin.Tesseract": "0.3.4"
         },
         "compile": {
           "bin/placeholder/VoteAndGo.dll": {}
@@ -366,6 +560,15 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win-x64": {
+      "ExifLib.PCL/1.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+sl50+win+WindowsPhoneApp81+wp80+Xamarin.iOS10+MonoAndroid10+MonoTouch10/ExifLib.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+sl50+win+WindowsPhoneApp81+wp80+Xamarin.iOS10+MonoAndroid10+MonoTouch10/ExifLib.dll": {}
+        }
+      },
       "Plugin.Permissions/6.0.1": {
         "type": "package",
         "dependencies": {
@@ -530,14 +733,102 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Tesseract/0.3.4": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Tesseract.Binding.iOS.dll": {},
+          "lib/Xamarin.iOS10/Tesseract.dll": {},
+          "lib/Xamarin.iOS10/Tesseract.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Tesseract.Binding.iOS.dll": {},
+          "lib/Xamarin.iOS10/Tesseract.dll": {},
+          "lib/Xamarin.iOS10/Tesseract.iOS.dll": {}
+        }
+      },
+      "XLabs.Core/2.0.5782": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/XLabs.Core.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/XLabs.Core.dll": {}
+        }
+      },
+      "XLabs.Forms/2.0.5782": {
+        "type": "package",
+        "dependencies": {
+          "XLabs.Core": "[2.0.5782]",
+          "XLabs.IoC": "[2.0.5782]",
+          "XLabs.Platform": "[2.0.5782]",
+          "XLabs.Serialization": "[2.0.5782]",
+          "Xamarin.Forms": "1.5.1.6471"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/XLabs.Forms.dll": {},
+          "lib/Xamarin.iOS10/XLabs.Forms.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/XLabs.Forms.dll": {},
+          "lib/Xamarin.iOS10/XLabs.Forms.iOS.dll": {}
+        }
+      },
+      "XLabs.IoC/2.0.5782": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1/XLabs.Ioc.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1/XLabs.Ioc.dll": {}
+        }
+      },
+      "XLabs.IoC.TinyIoC/2.0.5782": {
+        "type": "package",
+        "dependencies": {
+          "XLabs.IoC": "[2.0.5782]"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/XLabs.Ioc.TinyIOC.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/XLabs.Ioc.TinyIOC.iOS.dll": {}
+        }
+      },
+      "XLabs.Platform/2.0.5782": {
+        "type": "package",
+        "dependencies": {
+          "ExifLib.PCL": "1.0.1",
+          "XLabs.Core": "[2.0.5782]"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/XLabs.Platform.dll": {},
+          "lib/Xamarin.iOS10/XLabs.Platform.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/XLabs.Platform.dll": {},
+          "lib/Xamarin.iOS10/XLabs.Platform.iOS.dll": {}
+        }
+      },
+      "XLabs.Serialization/2.0.5782": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/XLabs.Serialization.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/XLabs.Serialization.dll": {}
+        }
+      },
       "VoteAndGo/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Plugin.Permissions": "6.0.1",
+          "XLabs.Forms": "2.0.5782",
+          "XLabs.IoC.TinyIoC": "2.0.5782",
           "Xam.Plugin.Media": "5.0.1",
           "Xamarin.Essentials": "1.5.3.2",
-          "Xamarin.Forms": "4.8.0.1451"
+          "Xamarin.Forms": "4.8.0.1451",
+          "Xamarin.Tesseract": "0.3.4"
         },
         "compile": {
           "bin/placeholder/VoteAndGo.dll": {}
@@ -548,6 +839,15 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win-x86": {
+      "ExifLib.PCL/1.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+sl50+win+WindowsPhoneApp81+wp80+Xamarin.iOS10+MonoAndroid10+MonoTouch10/ExifLib.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+sl50+win+WindowsPhoneApp81+wp80+Xamarin.iOS10+MonoAndroid10+MonoTouch10/ExifLib.dll": {}
+        }
+      },
       "Plugin.Permissions/6.0.1": {
         "type": "package",
         "dependencies": {
@@ -712,14 +1012,102 @@
           "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
+      "Xamarin.Tesseract/0.3.4": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Tesseract.Binding.iOS.dll": {},
+          "lib/Xamarin.iOS10/Tesseract.dll": {},
+          "lib/Xamarin.iOS10/Tesseract.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Tesseract.Binding.iOS.dll": {},
+          "lib/Xamarin.iOS10/Tesseract.dll": {},
+          "lib/Xamarin.iOS10/Tesseract.iOS.dll": {}
+        }
+      },
+      "XLabs.Core/2.0.5782": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/XLabs.Core.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/XLabs.Core.dll": {}
+        }
+      },
+      "XLabs.Forms/2.0.5782": {
+        "type": "package",
+        "dependencies": {
+          "XLabs.Core": "[2.0.5782]",
+          "XLabs.IoC": "[2.0.5782]",
+          "XLabs.Platform": "[2.0.5782]",
+          "XLabs.Serialization": "[2.0.5782]",
+          "Xamarin.Forms": "1.5.1.6471"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/XLabs.Forms.dll": {},
+          "lib/Xamarin.iOS10/XLabs.Forms.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/XLabs.Forms.dll": {},
+          "lib/Xamarin.iOS10/XLabs.Forms.iOS.dll": {}
+        }
+      },
+      "XLabs.IoC/2.0.5782": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1/XLabs.Ioc.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1/XLabs.Ioc.dll": {}
+        }
+      },
+      "XLabs.IoC.TinyIoC/2.0.5782": {
+        "type": "package",
+        "dependencies": {
+          "XLabs.IoC": "[2.0.5782]"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/XLabs.Ioc.TinyIOC.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/XLabs.Ioc.TinyIOC.iOS.dll": {}
+        }
+      },
+      "XLabs.Platform/2.0.5782": {
+        "type": "package",
+        "dependencies": {
+          "ExifLib.PCL": "1.0.1",
+          "XLabs.Core": "[2.0.5782]"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/XLabs.Platform.dll": {},
+          "lib/Xamarin.iOS10/XLabs.Platform.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/XLabs.Platform.dll": {},
+          "lib/Xamarin.iOS10/XLabs.Platform.iOS.dll": {}
+        }
+      },
+      "XLabs.Serialization/2.0.5782": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/XLabs.Serialization.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/XLabs.Serialization.dll": {}
+        }
+      },
       "VoteAndGo/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "Plugin.Permissions": "6.0.1",
+          "XLabs.Forms": "2.0.5782",
+          "XLabs.IoC.TinyIoC": "2.0.5782",
           "Xam.Plugin.Media": "5.0.1",
           "Xamarin.Essentials": "1.5.3.2",
-          "Xamarin.Forms": "4.8.0.1451"
+          "Xamarin.Forms": "4.8.0.1451",
+          "Xamarin.Tesseract": "0.3.4"
         },
         "compile": {
           "bin/placeholder/VoteAndGo.dll": {}
@@ -731,6 +1119,18 @@
     }
   },
   "libraries": {
+    "ExifLib.PCL/1.0.1": {
+      "sha512": "16KG9oXTPJkjCRq2xQmfPfJqCfcCjK3h034oazOE61LM4kddMr50a6EgrOV+F7RtIzVVd5ATEZRCiNWnnWqDkA==",
+      "type": "package",
+      "path": "exiflib.pcl/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "exiflib.pcl.1.0.1.nupkg.sha512",
+        "exiflib.pcl.nuspec",
+        "lib/portable-net45+sl50+win+WindowsPhoneApp81+wp80+Xamarin.iOS10+MonoAndroid10+MonoTouch10/ExifLib.dll"
+      ]
+    },
     "Plugin.Permissions/6.0.1": {
       "sha512": "na/0FNhyKmSicANWZMLSM0y/FW2AvLoawX3lsvBpELwP15sdJRyuBhRKk1OQjRoNrmTIewcON1tJFyydjMGWcA==",
       "type": "package",
@@ -1166,6 +1566,162 @@
         "xamarin.forms.nuspec"
       ]
     },
+    "Xamarin.Tesseract/0.3.4": {
+      "sha512": "XpOyKrgytYgAONE7DJU0pR2Zksn7xw1eLP3W4h2dkyCE3WlXHPCpJWYYmLK84aYuSq/QpLrAR4KDm0R3jhAjSA==",
+      "type": "package",
+      "path": "xamarin.tesseract/0.3.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10/Tesseract.Binding.Droid.dll",
+        "lib/MonoAndroid10/Tesseract.Droid.dll",
+        "lib/MonoAndroid10/Tesseract.dll",
+        "lib/Xamarin.iOS10/Tesseract.Binding.iOS.dll",
+        "lib/Xamarin.iOS10/Tesseract.dll",
+        "lib/Xamarin.iOS10/Tesseract.iOS.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Tesseract.dll",
+        "xamarin.tesseract.0.3.4.nupkg.sha512",
+        "xamarin.tesseract.nuspec"
+      ]
+    },
+    "XLabs.Core/2.0.5782": {
+      "sha512": "XLRztFIAjUYfjaaur4aPa/gjBNOwnAoelnmm83v4U0R5dJcWhll5Sci3s8nJWpHv1unwX1TuRsWT0rqMNm0PzA==",
+      "type": "package",
+      "path": "xlabs.core/2.0.5782",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/Xamarin.iOS10/XLabs.Core.XML",
+        "lib/Xamarin.iOS10/XLabs.Core.dll",
+        "lib/portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1/XLabs.Core.XML",
+        "lib/portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1/XLabs.Core.dll",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1/XLabs.Core.XML",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1/XLabs.Core.dll",
+        "xlabs.core.2.0.5782.nupkg.sha512",
+        "xlabs.core.nuspec"
+      ]
+    },
+    "XLabs.Forms/2.0.5782": {
+      "sha512": "ky3fCcqK1jaSMyIavo8g4Jb/KWhMGH7AlDzFtmP/vNNxiYWHnkmCz1kIvuBNodEwbqJgINpPUcvfW5IbBxbVYg==",
+      "type": "package",
+      "path": "xlabs.forms/2.0.5782",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid/XLabs.Forms.Droid.XML",
+        "lib/MonoAndroid/XLabs.Forms.Droid.dll",
+        "lib/MonoAndroid/XLabs.Forms.XML",
+        "lib/MonoAndroid/XLabs.Forms.dll",
+        "lib/Xamarin.iOS10/XLabs.Forms.XML",
+        "lib/Xamarin.iOS10/XLabs.Forms.dll",
+        "lib/Xamarin.iOS10/XLabs.Forms.iOS.XML",
+        "lib/Xamarin.iOS10/XLabs.Forms.iOS.dll",
+        "lib/portable-net45+netcore45+wpa81+wp8/XLabs.Forms.XML",
+        "lib/portable-net45+netcore45+wpa81+wp8/XLabs.Forms.dll",
+        "lib/wp8/XLabs.Forms.WP8.XML",
+        "lib/wp8/XLabs.Forms.WP8.dll",
+        "lib/wp8/XLabs.Forms.XML",
+        "lib/wp8/XLabs.Forms.dll",
+        "lib/wpa81/XLabs.Forms.WP8.XML",
+        "lib/wpa81/XLabs.Forms.WP8.dll",
+        "lib/wpa81/XLabs.Forms.XML",
+        "lib/wpa81/XLabs.Forms.dll",
+        "xlabs.forms.2.0.5782.nupkg.sha512",
+        "xlabs.forms.nuspec"
+      ]
+    },
+    "XLabs.IoC/2.0.5782": {
+      "sha512": "lFhk1z7pJSlwz2OnxGsZexpzrq5pmH1jvu07oX92ZZEMbJzmvlK9s76G54yE6hQwpv3DVrNtcZ4ubVT1/makRA==",
+      "type": "package",
+      "path": "xlabs.ioc/2.0.5782",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1/XLabs.Ioc.XML",
+        "lib/portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1/XLabs.Ioc.dll",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1+Xamarin.iOS10/XLabs.Ioc.XML",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1+Xamarin.iOS10/XLabs.Ioc.dll",
+        "xlabs.ioc.2.0.5782.nupkg.sha512",
+        "xlabs.ioc.nuspec"
+      ]
+    },
+    "XLabs.IoC.TinyIoC/2.0.5782": {
+      "sha512": "CiQttXcrWfW/BMb16JuoTS/atzbQJOK/SSYlEocSqeSzY3IHAApouLwHEg7Oek/SrijbiFek8q6VhgUq0T2HKg==",
+      "type": "package",
+      "path": "xlabs.ioc.tinyioc/2.0.5782",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid/XLabs.Ioc.TinyIOC.Droid.XML",
+        "lib/MonoAndroid/XLabs.Ioc.TinyIOC.Droid.dll",
+        "lib/Xamarin.iOS10/XLabs.Ioc.TinyIOC.iOS.XML",
+        "lib/Xamarin.iOS10/XLabs.Ioc.TinyIOC.iOS.dll",
+        "lib/net45/XLabs.Ioc.TinyIOC.XML",
+        "lib/net45/XLabs.Ioc.TinyIOC.dll",
+        "lib/wp8/XLabs.Ioc.TinyIOC.WP8.XML",
+        "lib/wp8/XLabs.Ioc.TinyIOC.WP8.dll",
+        "lib/wpa81/XLabs.Ioc.TinyIOC.WP8.XML",
+        "lib/wpa81/XLabs.Ioc.TinyIOC.WP8.dll",
+        "xlabs.ioc.tinyioc.2.0.5782.nupkg.sha512",
+        "xlabs.ioc.tinyioc.nuspec"
+      ]
+    },
+    "XLabs.Platform/2.0.5782": {
+      "sha512": "n5ZgLrh4Ut7EflUKmVii4feQ5xsLQTyTPYf8IDuldOi2furuxSPfHr2H4dpGTbmDxiB21sS0ZA6tdhoQQM27uA==",
+      "type": "package",
+      "path": "xlabs.platform/2.0.5782",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid/XLabs.Platform.Droid.XML",
+        "lib/MonoAndroid/XLabs.Platform.Droid.dll",
+        "lib/MonoAndroid/XLabs.Platform.XML",
+        "lib/MonoAndroid/XLabs.Platform.dll",
+        "lib/Xamarin.iOS10/XLabs.Platform.XML",
+        "lib/Xamarin.iOS10/XLabs.Platform.dll",
+        "lib/Xamarin.iOS10/XLabs.Platform.iOS.XML",
+        "lib/Xamarin.iOS10/XLabs.Platform.iOS.dll",
+        "lib/portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1/XLabs.Platform.XML",
+        "lib/portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1/XLabs.Platform.dll",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1/XLabs.Platform.XML",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1/XLabs.Platform.dll",
+        "lib/portable-net45+netcore45+wpa81+wp8/XLabs.Platform.XML",
+        "lib/portable-net45+netcore45+wpa81+wp8/XLabs.Platform.dll",
+        "lib/wp8/XLabs.Platform.WP8.XML",
+        "lib/wp8/XLabs.Platform.WP8.dll",
+        "lib/wp8/XLabs.Platform.WinRT.winmd",
+        "lib/wp8/XLabs.Platform.XML",
+        "lib/wp8/XLabs.Platform.dll",
+        "lib/wpa81/XLabs.Platform.WP8.XML",
+        "lib/wpa81/XLabs.Platform.WP8.dll",
+        "lib/wpa81/XLabs.Platform.WinRT.winmd",
+        "lib/wpa81/XLabs.Platform.XML",
+        "lib/wpa81/XLabs.Platform.dll",
+        "xlabs.platform.2.0.5782.nupkg.sha512",
+        "xlabs.platform.nuspec"
+      ]
+    },
+    "XLabs.Serialization/2.0.5782": {
+      "sha512": "lObYD+cpUv6pnUd9IsWYj5i0sSO8EUT60KaiDKxv2VHr1oAsNC37HpWcetGezYO2nfQN5AZzVtE8ENbYOqx2Dg==",
+      "type": "package",
+      "path": "xlabs.serialization/2.0.5782",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/Xamarin.iOS10/XLabs.Serialization.XML",
+        "lib/Xamarin.iOS10/XLabs.Serialization.dll",
+        "lib/portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1/XLabs.Serialization.XML",
+        "lib/portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1/XLabs.Serialization.dll",
+        "lib/portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1/XLabs.Serialization.dll.CodeAnalysisLog.xml",
+        "lib/portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1/XLabs.Serialization.dll.lastcodeanalysissucceeded",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1/XLabs.Serialization.XML",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1/XLabs.Serialization.dll",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1/XLabs.Serialization.dll.CodeAnalysisLog.xml",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1/XLabs.Serialization.dll.lastcodeanalysissucceeded",
+        "xlabs.serialization.2.0.5782.nupkg.sha512",
+        "xlabs.serialization.nuspec"
+      ]
+    },
     "VoteAndGo/1.0.0": {
       "type": "project",
       "path": "../VoteAndGo/VoteAndGo.csproj",
@@ -1176,8 +1732,11 @@
     "Xamarin.iOS,Version=v1.0": [
       "Plugin.Permissions >= 6.0.1",
       "VoteAndGo >= 1.0.0",
+      "XLabs.Forms >= 2.0.5782",
+      "XLabs.IoC.TinyIoC >= 2.0.5782",
       "Xamarin.Essentials >= 1.5.3.2",
-      "Xamarin.Forms >= 4.8.0.1451"
+      "Xamarin.Forms >= 4.8.0.1451",
+      "Xamarin.Tesseract >= 0.3.4"
     ]
   },
   "packageFolders": {
@@ -1226,6 +1785,14 @@
             "target": "Package",
             "version": "[6.0.1, )"
           },
+          "XLabs.Forms": {
+            "target": "Package",
+            "version": "[2.0.5782, )"
+          },
+          "XLabs.IoC.TinyIoC": {
+            "target": "Package",
+            "version": "[2.0.5782, )"
+          },
           "Xamarin.Essentials": {
             "target": "Package",
             "version": "[1.5.3.2, )"
@@ -1233,6 +1800,10 @@
           "Xamarin.Forms": {
             "target": "Package",
             "version": "[4.8.0.1451, )"
+          },
+          "Xamarin.Tesseract": {
+            "target": "Package",
+            "version": "[0.3.4, )"
           }
         }
       }

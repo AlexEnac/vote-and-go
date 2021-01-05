@@ -1,13 +1,21 @@
 {
   "version": 2,
-  "dgSpecHash": "S9ryKNboypbF3EJQCGxL+ZWy7L88HgJhDc0y6b2XHP6MezRK3WWhtB7bz6yS6OYiSeeuiSHJaWv/GQAkI/YnKA==",
+  "dgSpecHash": "Dv5vB30CyGIlhP7kAwQYNvVOgDHtoWSrcJZUgFvBVbqBTw63cbKeif6KJOgxiYRpxH0ZmUIm+NTPkvGCeLKD/Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\Iulia\\source\\repos\\VoteAndGo\\VoteAndGo\\VoteAndGo.iOS\\VoteAndGo.iOS.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Iulia\\.nuget\\packages\\exiflib.pcl\\1.0.1\\exiflib.pcl.1.0.1.nupkg.sha512",
     "C:\\Users\\Iulia\\.nuget\\packages\\plugin.permissions\\6.0.1\\plugin.permissions.6.0.1.nupkg.sha512",
     "C:\\Users\\Iulia\\.nuget\\packages\\xam.plugin.media\\5.0.1\\xam.plugin.media.5.0.1.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
-    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.8.0.1451\\xamarin.forms.4.8.0.1451.nupkg.sha512"
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.8.0.1451\\xamarin.forms.4.8.0.1451.nupkg.sha512",
+    "C:\\Users\\Iulia\\.nuget\\packages\\xamarin.tesseract\\0.3.4\\xamarin.tesseract.0.3.4.nupkg.sha512",
+    "C:\\Users\\Iulia\\.nuget\\packages\\xlabs.core\\2.0.5782\\xlabs.core.2.0.5782.nupkg.sha512",
+    "C:\\Users\\Iulia\\.nuget\\packages\\xlabs.forms\\2.0.5782\\xlabs.forms.2.0.5782.nupkg.sha512",
+    "C:\\Users\\Iulia\\.nuget\\packages\\xlabs.ioc\\2.0.5782\\xlabs.ioc.2.0.5782.nupkg.sha512",
+    "C:\\Users\\Iulia\\.nuget\\packages\\xlabs.ioc.tinyioc\\2.0.5782\\xlabs.ioc.tinyioc.2.0.5782.nupkg.sha512",
+    "C:\\Users\\Iulia\\.nuget\\packages\\xlabs.platform\\2.0.5782\\xlabs.platform.2.0.5782.nupkg.sha512",
+    "C:\\Users\\Iulia\\.nuget\\packages\\xlabs.serialization\\2.0.5782\\xlabs.serialization.2.0.5782.nupkg.sha512"
   ],
   "logs": []
 }

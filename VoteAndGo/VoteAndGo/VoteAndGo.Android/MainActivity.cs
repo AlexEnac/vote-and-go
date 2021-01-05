@@ -7,6 +7,12 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 using Plugin.CurrentActivity;
+using TinyIoC;
+using XLabs.Platform.Device;
+using Tesseract;
+using Tesseract.Droid;
+using XLabs.Ioc;
+using XLabs.Ioc.TinyIOC;
 
 namespace VoteAndGo.Droid
 {
@@ -17,11 +23,20 @@ namespace VoteAndGo.Droid
         {
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
+            var container = TinyIoCContainer.Current;
 
             base.OnCreate(savedInstanceState);
 
             CrossCurrentActivity.Current.Init(this, savedInstanceState);
             CrossCurrentActivity.Current.Activity = this;
+
+            container.Register<IDevice>(AndroidDevice.CurrentDevice);
+            container.Register<ITesseractApi>((cont, parameters) =>
+            {
+                return new TesseractApi(ApplicationContext, AssetsDeployment.OncePerInitialization);
+            });
+
+            Resolver.SetResolver(new TinyResolver(container));
 
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
@@ -33,6 +48,8 @@ namespace VoteAndGo.Droid
 
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
+
+         
 
     }
 }

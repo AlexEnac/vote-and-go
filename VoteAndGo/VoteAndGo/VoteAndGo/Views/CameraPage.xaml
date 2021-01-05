@@ -9,12 +9,15 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
         <Image x:Name="CameraImage" Source="{Binding Image}"/>
 
+        <Label x:Name="RecognizedText" Grid.Row="1"/>
+
         <Button x:Name="CameraButton" Text="Take Photo"
-                Grid.Row="1"/>
+                Grid.Row="2"/>
 
     </Grid>
 </ContentPage>
