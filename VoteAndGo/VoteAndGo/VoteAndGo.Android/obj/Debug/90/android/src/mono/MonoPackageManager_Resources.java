@@ -3,6 +3,9 @@ public class MonoPackageManager_Resources {
 	public static String[] Assemblies = new String[]{
 		/* We need to ensure that "VoteAndGo.Android.dll" comes first in this list. */
 		"VoteAndGo.Android.dll",
+		"BlinkID.dll",
+		"BlinkID.Forms.Core.dll",
+		"BlinkIDAARBinding.dll",
 		"ExifLib.dll",
 		"FormsViewGroup.dll",
 		"Plugin.CurrentActivity.dll",
@@ -45,6 +48,8 @@ public class MonoPackageManager_Resources {
 		"Xamarin.Android.Support.v4.dll",
 		"Xamarin.Android.Support.v7.AppCompat.dll",
 		"Xamarin.Android.Support.v7.CardView.dll",
+		"Xamarin.Android.Support.v7.MediaRouter.dll",
+		"Xamarin.Android.Support.v7.Palette.dll",
 		"Xamarin.Android.Support.v7.RecyclerView.dll",
 		"Xamarin.Android.Support.Vector.Drawable.dll",
 		"Xamarin.Android.Support.VersionedParcelable.dll",

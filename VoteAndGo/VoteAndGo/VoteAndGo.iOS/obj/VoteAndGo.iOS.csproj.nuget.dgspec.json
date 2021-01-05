@@ -42,6 +42,10 @@
       "frameworks": {
         "xamarinios10": {
           "dependencies": {
+            "BlinkID.Forms": {
+              "target": "Package",
+              "version": "[5.9.0, )"
+            },
             "Plugin.Permissions": {
               "target": "Package",
               "version": "[6.0.1, )"
@@ -121,6 +125,10 @@
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
           "dependencies": {
+            "BlinkID.Forms": {
+              "target": "Package",
+              "version": "[5.9.0, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",

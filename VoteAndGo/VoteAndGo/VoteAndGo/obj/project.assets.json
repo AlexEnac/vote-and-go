@@ -2,6 +2,25 @@
   "version": 3,
   "targets": {
     ".NETStandard,Version=v2.0": {
+      "BlinkID.Forms/5.9.0": {
+        "type": "package",
+        "dependencies": {
+          "BlinkID.Forms.Core": "5.9.0"
+        }
+      },
+      "BlinkID.Forms.Core/5.9.0": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Xamarin.Forms": "4.4.0.991265"
+        },
+        "compile": {
+          "lib/netstandard1.0/BlinkID.Forms.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/BlinkID.Forms.Core.dll": {}
+        }
+      },
       "ExifLib.PCL/1.0.1": {
         "type": "package",
         "compile": {
@@ -177,6 +196,30 @@
     }
   },
   "libraries": {
+    "BlinkID.Forms/5.9.0": {
+      "sha512": "8jj0hsOSS1RsuL9y0v92b7hF5TSYF0C+zKRgjqluJnNenUK7R0snUmDQMx04GxsMkzh8lZozIykFbYaS+x3yww==",
+      "type": "package",
+      "path": "blinkid.forms/5.9.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "blinkid.forms.5.9.0.nupkg.sha512",
+        "blinkid.forms.nuspec"
+      ]
+    },
+    "BlinkID.Forms.Core/5.9.0": {
+      "sha512": "gypx/z2GhFkrFKP9YCcJLrUSglwWN42b2Ml8kdhF3ERou1dKSoqYNbt4sEnxutoCrG0aYPl/2DlTIfPZ4yqveQ==",
+      "type": "package",
+      "path": "blinkid.forms.core/5.9.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "blinkid.forms.core.5.9.0.nupkg.sha512",
+        "blinkid.forms.core.nuspec",
+        "lib/netstandard1.0/BlinkID.Forms.Core.dll",
+        "lib/netstandard1.0/BlinkID.Forms.Core.xml"
+      ]
+    },
     "ExifLib.PCL/1.0.1": {
       "sha512": "16KG9oXTPJkjCRq2xQmfPfJqCfcCjK3h034oazOE61LM4kddMr50a6EgrOV+F7RtIzVVd5ATEZRCiNWnnWqDkA==",
       "type": "package",
@@ -974,6 +1017,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
+      "BlinkID.Forms >= 5.9.0",
       "NETStandard.Library >= 2.0.3",
       "Plugin.Permissions >= 6.0.1",
       "XLabs.Forms >= 2.0.5782",
@@ -1028,6 +1072,10 @@
       "netstandard2.0": {
         "targetAlias": "netstandard2.0",
         "dependencies": {
+          "BlinkID.Forms": {
+            "target": "Package",
+            "version": "[5.9.0, )"
+          },
           "NETStandard.Library": {
             "suppressParent": "All",
             "target": "Package",

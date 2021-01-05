@@ -38,5 +38,11 @@
         <category android:name="mono.android.intent.category.SEPPUKU.com.companyname.voteandgo" />
       </intent-filter>
     </receiver>
+    <activity android:name="com.microblink.activity.DocumentScanActivity" android:configChanges="orientation|screenSize" android:screenOrientation="nosensor"></activity>
+    <activity android:name="com.microblink.activity.DocumentVerificationActivity" android:configChanges="orientation|screenSize" android:screenOrientation="nosensor"></activity>
+    <activity android:name="com.microblink.activity.BlinkIdActivity" android:configChanges="orientation|screenSize" android:screenOrientation="sensor"></activity>
   </application>
+  <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true" />
+  <uses-permission android:name="android.permission.FLASHLIGHT" />
+  <uses-feature android:name="android.hardware.camera.flash" android:required="false" />
 </manifest>

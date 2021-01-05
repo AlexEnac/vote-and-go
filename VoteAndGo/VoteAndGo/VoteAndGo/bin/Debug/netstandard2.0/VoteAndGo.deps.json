@@ -9,6 +9,7 @@
     ".NETStandard,Version=v2.0/": {
       "VoteAndGo/1.0.0": {
         "dependencies": {
+          "BlinkID.Forms": "5.9.0",
           "NETStandard.Library": "2.0.3",
           "Plugin.Permissions": "6.0.1",
           "XLabs.Forms": "2.0.5782",
@@ -21,6 +22,23 @@
         },
         "runtime": {
           "VoteAndGo.dll": {}
+        }
+      },
+      "BlinkID.Forms/5.9.0": {
+        "dependencies": {
+          "BlinkID.Forms.Core": "5.9.0"
+        }
+      },
+      "BlinkID.Forms.Core/5.9.0": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.3",
+          "Xamarin.Forms": "4.8.0.1451"
+        },
+        "runtime": {
+          "lib/netstandard1.0/BlinkID.Forms.Core.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "ExifLib.PCL/1.0.1": {
@@ -179,6 +197,20 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "BlinkID.Forms/5.9.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8jj0hsOSS1RsuL9y0v92b7hF5TSYF0C+zKRgjqluJnNenUK7R0snUmDQMx04GxsMkzh8lZozIykFbYaS+x3yww==",
+      "path": "blinkid.forms/5.9.0",
+      "hashPath": "blinkid.forms.5.9.0.nupkg.sha512"
+    },
+    "BlinkID.Forms.Core/5.9.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-gypx/z2GhFkrFKP9YCcJLrUSglwWN42b2Ml8kdhF3ERou1dKSoqYNbt4sEnxutoCrG0aYPl/2DlTIfPZ4yqveQ==",
+      "path": "blinkid.forms.core/5.9.0",
+      "hashPath": "blinkid.forms.core.5.9.0.nupkg.sha512"
     },
     "ExifLib.PCL/1.0.1": {
       "type": "package",
