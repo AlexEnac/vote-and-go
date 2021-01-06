@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "rK9EH8cnNCxWqGGHsoljsPh9PrPREt0ArxBfGOuua4kD0tkVooQvwKZjz0gK4gbf9KJqszlbb7+ODd3DGunSfw==",
+  "dgSpecHash": "R7yei7Q7uP5+RCGnXfkcsCErqGVRVjKAl8SP5uStlRw4k2ieeQXD5nA8ft4vyDdTpHMrLKbEO0eOQrnAw/sXKA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Iulia\\source\\repos\\VoteAndGo\\VoteAndGo\\VoteAndGo.iOS\\VoteAndGo.iOS.csproj",
   "expectedPackageFiles": [
@@ -8,7 +8,6 @@
     "C:\\Users\\Iulia\\.nuget\\packages\\blinkid.forms.core\\5.9.0\\blinkid.forms.core.5.9.0.nupkg.sha512",
     "C:\\Users\\Iulia\\.nuget\\packages\\blinkid.forms.ios\\5.9.0\\blinkid.forms.ios.5.9.0.nupkg.sha512",
     "C:\\Users\\Iulia\\.nuget\\packages\\blinkid.ios.binding\\5.9.0\\blinkid.ios.binding.5.9.0.nupkg.sha512",
-    "C:\\Users\\Iulia\\.nuget\\packages\\exiflib.pcl\\1.0.1\\exiflib.pcl.1.0.1.nupkg.sha512",
     "C:\\Users\\Iulia\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Iulia\\.nuget\\packages\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\Iulia\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
@@ -57,14 +56,7 @@
     "C:\\Users\\Iulia\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\Iulia\\.nuget\\packages\\xam.plugin.media\\5.0.1\\xam.plugin.media.5.0.1.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
-    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.8.0.1451\\xamarin.forms.4.8.0.1451.nupkg.sha512",
-    "C:\\Users\\Iulia\\.nuget\\packages\\xamarin.tesseract\\0.3.4\\xamarin.tesseract.0.3.4.nupkg.sha512",
-    "C:\\Users\\Iulia\\.nuget\\packages\\xlabs.core\\2.0.5782\\xlabs.core.2.0.5782.nupkg.sha512",
-    "C:\\Users\\Iulia\\.nuget\\packages\\xlabs.forms\\2.0.5782\\xlabs.forms.2.0.5782.nupkg.sha512",
-    "C:\\Users\\Iulia\\.nuget\\packages\\xlabs.ioc\\2.0.5782\\xlabs.ioc.2.0.5782.nupkg.sha512",
-    "C:\\Users\\Iulia\\.nuget\\packages\\xlabs.ioc.tinyioc\\2.0.5782\\xlabs.ioc.tinyioc.2.0.5782.nupkg.sha512",
-    "C:\\Users\\Iulia\\.nuget\\packages\\xlabs.platform\\2.0.5782\\xlabs.platform.2.0.5782.nupkg.sha512",
-    "C:\\Users\\Iulia\\.nuget\\packages\\xlabs.serialization\\2.0.5782\\xlabs.serialization.2.0.5782.nupkg.sha512"
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.8.0.1451\\xamarin.forms.4.8.0.1451.nupkg.sha512"
   ],
   "logs": []
 }

@@ -5,19 +5,39 @@
              xmlns:vm="clr-namespace:VoteAndGo.ViewModels"
              Title="{Binding Title}">
 
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-        </Grid.RowDefinitions>
+    <ContentPage.BindingContext>
+        <vm:CameraViewModel />
+    </ContentPage.BindingContext>
 
-        <Image x:Name="CameraImage" Source="{Binding Image}"/>
-
-        <Label x:Name="RecognizedText" Grid.Row="1"/>
-
-        <Button x:Name="CameraButton" Text="Take Photo"
-                Grid.Row="2"/>
-
-    </Grid>
+    <ContentPage.Content>
+        <ScrollView Orientation="Vertical" VerticalOptions="FillAndExpand">
+            <StackLayout Spacing="10" Padding="30" >
+                <Label Text="Results:" />
+                <Editor x:Name="resultsEditor"
+                IsEnabled="true" 
+                Text="{Binding ResultsEditor}"
+                HeightRequest="400" 
+                TextColor="Black" 
+                BackgroundColor="White" 
+                FontSize="Medium" />
+                <Button x:Name="startScanningButton" Text="Start scanning" Command="{Binding StartScanCommand}" />
+                <Image x:Name="fullDocumentFrontImage" 
+                Source="{Binding FullDocumentFrontImage}"
+                WidthRequest="200"
+                HeightRequest="100"  />
+                <Image x:Name="fullDocumentBackImage" 
+                Source="{Binding FullDocumentBackImage}"
+                WidthRequest="200"
+                HeightRequest="100"  />
+                <Image x:Name="faceImage" 
+                Source="{Binding FaceImage}"
+                WidthRequest="200"
+                HeightRequest="100"  />
+                <Image x:Name="successScanImage" 
+                Source="{Binding SuccessScanImage}"
+                WidthRequest="200"
+                HeightRequest="100"  />
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
 </ContentPage>

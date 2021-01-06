@@ -1,107 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "kxhp23i+png03NhSwBuW2GlNXgfqc5zDUUNO8PML3KB1EA0tiUPMHFCXXiNBKv2ZQFoFS7rsL77zhLI6OuhZeA==",
+  "dgSpecHash": "J6FYSJYWQNvipp+Xp8H8UMT04p1btVMIYeG+jwSivVl3GutvsBuhGFOJjEFbwJ2Y0b5uaVRRCBUPvDtaA5jr1w==",
   "success": true,
   "projectFilePath": "C:\\Users\\Iulia\\source\\repos\\VoteAndGo\\VoteAndGo\\VoteAndGo\\VoteAndGo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Iulia\\.nuget\\packages\\blinkid.forms\\5.9.0\\blinkid.forms.5.9.0.nupkg.sha512",
     "C:\\Users\\Iulia\\.nuget\\packages\\blinkid.forms.core\\5.9.0\\blinkid.forms.core.5.9.0.nupkg.sha512",
-    "C:\\Users\\Iulia\\.nuget\\packages\\exiflib.pcl\\1.0.1\\exiflib.pcl.1.0.1.nupkg.sha512",
     "C:\\Users\\Iulia\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Iulia\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Users\\Iulia\\.nuget\\packages\\plugin.permissions\\6.0.1\\plugin.permissions.6.0.1.nupkg.sha512",
     "C:\\Users\\Iulia\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\Iulia\\.nuget\\packages\\xam.plugin.media\\5.0.1\\xam.plugin.media.5.0.1.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
-    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.8.0.1451\\xamarin.forms.4.8.0.1451.nupkg.sha512",
-    "C:\\Users\\Iulia\\.nuget\\packages\\xamarin.tesseract\\0.3.4\\xamarin.tesseract.0.3.4.nupkg.sha512",
-    "C:\\Users\\Iulia\\.nuget\\packages\\xlabs.core\\2.0.5782\\xlabs.core.2.0.5782.nupkg.sha512",
-    "C:\\Users\\Iulia\\.nuget\\packages\\xlabs.forms\\2.0.5782\\xlabs.forms.2.0.5782.nupkg.sha512",
-    "C:\\Users\\Iulia\\.nuget\\packages\\xlabs.ioc\\2.0.5782\\xlabs.ioc.2.0.5782.nupkg.sha512",
-    "C:\\Users\\Iulia\\.nuget\\packages\\xlabs.ioc.tinyioc\\2.0.5782\\xlabs.ioc.tinyioc.2.0.5782.nupkg.sha512",
-    "C:\\Users\\Iulia\\.nuget\\packages\\xlabs.platform\\2.0.5782\\xlabs.platform.2.0.5782.nupkg.sha512",
-    "C:\\Users\\Iulia\\.nuget\\packages\\xlabs.serialization\\2.0.5782\\xlabs.serialization.2.0.5782.nupkg.sha512"
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.8.0.1451\\xamarin.forms.4.8.0.1451.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'ExifLib.PCL 1.0.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.",
-      "libraryId": "ExifLib.PCL",
-      "targetGraphs": [
-        ".NETStandard,Version=v2.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Xamarin.Tesseract 0.3.4' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.",
-      "libraryId": "Xamarin.Tesseract",
-      "targetGraphs": [
-        ".NETStandard,Version=v2.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'XLabs.Core 2.0.5782' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.",
-      "libraryId": "XLabs.Core",
-      "targetGraphs": [
-        ".NETStandard,Version=v2.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'XLabs.Forms 2.0.5782' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.",
-      "libraryId": "XLabs.Forms",
-      "targetGraphs": [
-        ".NETStandard,Version=v2.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'XLabs.IoC 2.0.5782' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.",
-      "libraryId": "XLabs.IoC",
-      "targetGraphs": [
-        ".NETStandard,Version=v2.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'XLabs.IoC.TinyIoC 2.0.5782' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.",
-      "libraryId": "XLabs.IoC.TinyIoC",
-      "targetGraphs": [
-        ".NETStandard,Version=v2.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'XLabs.Platform 2.0.5782' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.",
-      "libraryId": "XLabs.Platform",
-      "targetGraphs": [
-        ".NETStandard,Version=v2.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'XLabs.Serialization 2.0.5782' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.",
-      "libraryId": "XLabs.Serialization",
-      "targetGraphs": [
-        ".NETStandard,Version=v2.0"
-      ]
-    }
-  ]
+  "logs": []
 }

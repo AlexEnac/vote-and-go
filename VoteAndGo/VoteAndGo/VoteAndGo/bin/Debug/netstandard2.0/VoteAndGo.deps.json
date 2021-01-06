@@ -12,12 +12,9 @@
           "BlinkID.Forms": "5.9.0",
           "NETStandard.Library": "2.0.3",
           "Plugin.Permissions": "6.0.1",
-          "XLabs.Forms": "2.0.5782",
-          "XLabs.IoC.TinyIoC": "2.0.5782",
           "Xam.Plugin.Media": "5.0.1",
           "Xamarin.Essentials": "1.5.3.2",
           "Xamarin.Forms": "4.8.0.1451",
-          "Xamarin.Tesseract": "0.3.4",
           "Mono.Android": "0.0.0.0"
         },
         "runtime": {
@@ -38,14 +35,6 @@
           "lib/netstandard1.0/BlinkID.Forms.Core.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
-          }
-        }
-      },
-      "ExifLib.PCL/1.0.1": {
-        "runtime": {
-          "lib/portable-net45+sl50+win+WindowsPhoneApp81+wp80+Xamarin.iOS10+MonoAndroid10+MonoTouch10/ExifLib.dll": {
-            "assemblyVersion": "1.0.1.0",
-            "fileVersion": "1.0.1.0"
           }
         }
       },
@@ -112,76 +101,6 @@
           }
         }
       },
-      "Xamarin.Tesseract/0.3.4": {
-        "runtime": {
-          "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Tesseract.dll": {
-            "assemblyVersion": "0.3.4.0",
-            "fileVersion": "0.3.4.0"
-          }
-        }
-      },
-      "XLabs.Core/2.0.5782": {
-        "runtime": {
-          "lib/portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1/XLabs.Core.dll": {
-            "assemblyVersion": "2.0.5782.12218",
-            "fileVersion": "2.0.5782.12218"
-          }
-        }
-      },
-      "XLabs.Forms/2.0.5782": {
-        "dependencies": {
-          "XLabs.Core": "2.0.5782",
-          "XLabs.IoC": "2.0.5782",
-          "XLabs.Platform": "2.0.5782",
-          "XLabs.Serialization": "2.0.5782",
-          "Xamarin.Forms": "4.8.0.1451"
-        },
-        "runtime": {
-          "lib/portable-net45+netcore45+wpa81+wp8/XLabs.Forms.dll": {
-            "assemblyVersion": "2.0.5782.12218",
-            "fileVersion": "2.0.5782.12218"
-          }
-        }
-      },
-      "XLabs.IoC/2.0.5782": {
-        "runtime": {
-          "lib/portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1/XLabs.Ioc.dll": {
-            "assemblyVersion": "2.0.5782.12218",
-            "fileVersion": "2.0.5782.12218"
-          }
-        }
-      },
-      "XLabs.IoC.TinyIoC/2.0.5782": {
-        "dependencies": {
-          "XLabs.IoC": "2.0.5782"
-        },
-        "runtime": {
-          "lib/net45/XLabs.Ioc.TinyIOC.dll": {
-            "assemblyVersion": "2.0.5782.12282",
-            "fileVersion": "2.0.5782.12282"
-          }
-        }
-      },
-      "XLabs.Platform/2.0.5782": {
-        "dependencies": {
-          "ExifLib.PCL": "1.0.1",
-          "XLabs.Core": "2.0.5782"
-        },
-        "runtime": {
-          "lib/portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1/XLabs.Platform.dll": {
-            "assemblyVersion": "2.0.5782.12218",
-            "fileVersion": "2.0.5782.12218"
-          }
-        }
-      },
-      "XLabs.Serialization/2.0.5782": {
-        "runtime": {
-          "lib/portable-net45+netcore45+wp8+MonoAndroid1+MonoTouch1/XLabs.Serialization.dll": {
-            "assemblyVersion": "2.0.5782.15703",
-            "fileVersion": "2.0.5782.15703"
-          }
-        }
-      },
       "Mono.Android/0.0.0.0": {
         "runtime": {
           "Mono.Android.dll": {
@@ -211,13 +130,6 @@
       "sha512": "sha512-gypx/z2GhFkrFKP9YCcJLrUSglwWN42b2Ml8kdhF3ERou1dKSoqYNbt4sEnxutoCrG0aYPl/2DlTIfPZ4yqveQ==",
       "path": "blinkid.forms.core/5.9.0",
       "hashPath": "blinkid.forms.core.5.9.0.nupkg.sha512"
-    },
-    "ExifLib.PCL/1.0.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-16KG9oXTPJkjCRq2xQmfPfJqCfcCjK3h034oazOE61LM4kddMr50a6EgrOV+F7RtIzVVd5ATEZRCiNWnnWqDkA==",
-      "path": "exiflib.pcl/1.0.1",
-      "hashPath": "exiflib.pcl.1.0.1.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "type": "package",
@@ -267,55 +179,6 @@
       "sha512": "sha512-3RUzBpcaBxOjufLLqJnuZRGLhzAbVyfe/Pyp0AFY/H1MkCHYxXIRzgB8h6yC9NTs39NLK2SgGiaMbvC4TJ/zFA==",
       "path": "xamarin.forms/4.8.0.1451",
       "hashPath": "xamarin.forms.4.8.0.1451.nupkg.sha512"
-    },
-    "Xamarin.Tesseract/0.3.4": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-XpOyKrgytYgAONE7DJU0pR2Zksn7xw1eLP3W4h2dkyCE3WlXHPCpJWYYmLK84aYuSq/QpLrAR4KDm0R3jhAjSA==",
-      "path": "xamarin.tesseract/0.3.4",
-      "hashPath": "xamarin.tesseract.0.3.4.nupkg.sha512"
-    },
-    "XLabs.Core/2.0.5782": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-XLRztFIAjUYfjaaur4aPa/gjBNOwnAoelnmm83v4U0R5dJcWhll5Sci3s8nJWpHv1unwX1TuRsWT0rqMNm0PzA==",
-      "path": "xlabs.core/2.0.5782",
-      "hashPath": "xlabs.core.2.0.5782.nupkg.sha512"
-    },
-    "XLabs.Forms/2.0.5782": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-ky3fCcqK1jaSMyIavo8g4Jb/KWhMGH7AlDzFtmP/vNNxiYWHnkmCz1kIvuBNodEwbqJgINpPUcvfW5IbBxbVYg==",
-      "path": "xlabs.forms/2.0.5782",
-      "hashPath": "xlabs.forms.2.0.5782.nupkg.sha512"
-    },
-    "XLabs.IoC/2.0.5782": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-lFhk1z7pJSlwz2OnxGsZexpzrq5pmH1jvu07oX92ZZEMbJzmvlK9s76G54yE6hQwpv3DVrNtcZ4ubVT1/makRA==",
-      "path": "xlabs.ioc/2.0.5782",
-      "hashPath": "xlabs.ioc.2.0.5782.nupkg.sha512"
-    },
-    "XLabs.IoC.TinyIoC/2.0.5782": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-CiQttXcrWfW/BMb16JuoTS/atzbQJOK/SSYlEocSqeSzY3IHAApouLwHEg7Oek/SrijbiFek8q6VhgUq0T2HKg==",
-      "path": "xlabs.ioc.tinyioc/2.0.5782",
-      "hashPath": "xlabs.ioc.tinyioc.2.0.5782.nupkg.sha512"
-    },
-    "XLabs.Platform/2.0.5782": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-n5ZgLrh4Ut7EflUKmVii4feQ5xsLQTyTPYf8IDuldOi2furuxSPfHr2H4dpGTbmDxiB21sS0ZA6tdhoQQM27uA==",
-      "path": "xlabs.platform/2.0.5782",
-      "hashPath": "xlabs.platform.2.0.5782.nupkg.sha512"
-    },
-    "XLabs.Serialization/2.0.5782": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-lObYD+cpUv6pnUd9IsWYj5i0sSO8EUT60KaiDKxv2VHr1oAsNC37HpWcetGezYO2nfQN5AZzVtE8ENbYOqx2Dg==",
-      "path": "xlabs.serialization/2.0.5782",
-      "hashPath": "xlabs.serialization.2.0.5782.nupkg.sha512"
     },
     "Mono.Android/0.0.0.0": {
       "type": "reference",

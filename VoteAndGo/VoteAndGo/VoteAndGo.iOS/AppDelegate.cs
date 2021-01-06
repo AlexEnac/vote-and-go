@@ -3,13 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 using Foundation;
-using Tesseract;
-using Tesseract.iOS;
-using TinyIoC;
 using UIKit;
-using XLabs.Ioc;
-using XLabs.Ioc.TinyIOC;
-using XLabs.Platform.Device;
 
 namespace VoteAndGo.iOS
 {
@@ -28,15 +22,6 @@ namespace VoteAndGo.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
-            var container = TinyIoCContainer.Current;
-
-            container.Register<IDevice>(AppleDevice.CurrentDevice);
-            container.Register<ITesseractApi>((cont, parameters) =>
-            {
-                return new TesseractApi();
-            });
-            Resolver.SetResolver(new TinyResolver(container));
-
             global::Xamarin.Forms.Forms.SetFlags("CollectionView_Experimental");
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());

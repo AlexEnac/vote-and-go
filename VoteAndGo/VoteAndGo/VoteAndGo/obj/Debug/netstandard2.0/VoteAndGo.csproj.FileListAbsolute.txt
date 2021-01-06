@@ -19,4 +19,3 @@ C:\Users\Iulia\source\repos\VoteAndGo\VoteAndGo\VoteAndGo\bin\Debug\netstandard2
 C:\Users\Iulia\source\repos\VoteAndGo\VoteAndGo\VoteAndGo\bin\Debug\netstandard2.0\Mono.Android.xml
 C:\Users\Iulia\source\repos\VoteAndGo\VoteAndGo\VoteAndGo\obj\Debug\netstandard2.0\Views\CameraPage.xaml.g.cs
 C:\Users\Iulia\source\repos\VoteAndGo\VoteAndGo\VoteAndGo\obj\Debug\netstandard2.0\VoteAndGo.csproj.CopyComplete
-C:\Users\Iulia\source\repos\VoteAndGo\VoteAndGo\VoteAndGo\obj\Debug\netstandard2.0\Views\BlinkIDPage.xaml.g.cs

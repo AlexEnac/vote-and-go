@@ -58,14 +58,6 @@
               "target": "Package",
               "version": "[6.0.1, )"
             },
-            "XLabs.Forms": {
-              "target": "Package",
-              "version": "[2.0.5782, )"
-            },
-            "XLabs.IoC.TinyIoC": {
-              "target": "Package",
-              "version": "[2.0.5782, )"
-            },
             "Xam.Plugin.Media": {
               "target": "Package",
               "version": "[5.0.1, )"
@@ -77,10 +69,6 @@
             "Xamarin.Forms": {
               "target": "Package",
               "version": "[4.8.0.1451, )"
-            },
-            "Xamarin.Tesseract": {
-              "target": "Package",
-              "version": "[0.3.4, )"
             }
           },
           "imports": [
